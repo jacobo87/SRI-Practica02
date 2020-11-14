@@ -132,6 +132,7 @@ h.Establece los siguientes registros de alias (CNAME):
 ➢www → a tunombre.sri (máquina anfitriona)  
 ➢nombrecompañero → a la máquina del compañero.i.Establece el registro para servidor de correo (MX)  
 ➢tunombre.sri → mail (ubuntu)  
+
 3. Comprueba el fichero ``named.conf.local`` con el comando ​``named-checkconf``. 
 
 4. Comprueba el archivo de zona que has creado con el comando:a.named-checkzone tunombre.sri ``/etc/bind/db.tunombre.sri``. 
@@ -147,5 +148,5 @@ a. Que resuelve todos los nombre y alias.
 b. Que resuelve dominio externos. 
 
 c. Que hace resolución inversa. 
- 
+
 

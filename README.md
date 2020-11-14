@@ -1,4 +1,8 @@
-# PRÁCTICA 02. DNS en Linux (Debian)
+# SRI-PRÁCTICA 02. DNS en Linux (Debian)
+> IES Celia Viñas (Almería) - Curso 2020/2021   
+> Módulo: SRI - Servicios de Red e Internet   
+> Ciclo: CFGS Administración de Sistemas Informáticos en Red 
+
 ### Punto 1. CONFIGURACIÓN PREVIA
 Siguiendo la configuración de máquinas virtuales que vimos en el tema inicial, vamos aconfigurar un servidor DNS (Bind9) en la máquina de Debian
 ### Punto 2. INSTALAR SERVICIO

@@ -143,6 +143,9 @@ h.Establece los siguientes registros de alias (CNAME):
 7. Comprobar en cliente Ubuntu (debe estar configurado con ip fija) el funcionamiento delservidor DNS en el dominio de cada uno tunombre.sri con el comando ​dig​. 
 
 a. Que resuelve todos los nombre y alias. 
+
 b. Que resuelve dominio externos. 
+
 c. Que hace resolución inversa. 
+ 
 

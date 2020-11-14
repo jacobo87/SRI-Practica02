@@ -97,27 +97,28 @@ b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear(est
 c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre).
 d. Crea el fichero de zona de resolución directa ​db.tunombre.sri ​y añade los registros para configurar el servidor con los valores que se indican (OJO a los puntos finales). Ver ANEXO I
 e. Parte inicial SOA
-➢Nombre del servidor principal para que sea ns.tunombre.sri 
-➢Contacto: tunombre.tunombre.sri 
-➢Serial: 20191112 
-➢Refresh: 604800 
-➢Retry: 86400 
-➢Expire: 2419200 
-➢TTL negativo 10800 
+➢Nombre del servidor principal para que sea ns.tunombre.sri  
+➢Contacto: tunombre.tunombre.sri  
+➢Serial: 20191112  
+➢Refresh: 604800  
+➢Retry: 86400  
+➢Expire: 2419200  
+➢TTL negativo 10800  
 
 f. En el registro servidores de nombre (NS) configuramos uno nuevo que seans.tunombre.sri (la propia máquina)
 g. Establece los registros de tipo A para las siguientes direcciones:
-➢ns.tunombre.sri → la IP del servidor (dos registros, uno por cada IP) 
-➢tunombre.sri → la IP de tu máquina anfitriona. 
-➢pcXX.tunombre.sri → 192.168.22.X (dónde XX es la IP de uncompañero) 
-➢router.tunombre.sri → 192.168.22.100 (Ip del router) 
-➢win.tunombre.sri → 10.0.X.X (ip de tu máquina cliente windows) 
-➢ubuntu.tunombre.sri → 10.0.X.X (ip de tu máquina cliente ubuntu)h.Establece los siguientes registros de alias (CNAME): 
-➢mail → a la máquina ubuntu 
-➢ftp → al router 
-➢www → a tunombre.sri (máquina anfitriona) 
-➢nombrecompañero → a la máquina del compañero.i.Establece el registro para servidor de correo (MX) 
-➢tunombre.sri → mail (ubuntu) 
+➢ns.tunombre.sri → la IP del servidor (dos registros, uno por cada IP)  
+➢tunombre.sri → la IP de tu máquina anfitriona.  
+➢pcXX.tunombre.sri → 192.168.22.X (dónde XX es la IP de uncompañero)  
+➢router.tunombre.sri → 192.168.22.100 (Ip del router)  
+➢win.tunombre.sri → 10.0.X.X (ip de tu máquina cliente windows)  
+➢ubuntu.tunombre.sri → 10.0.X.X (ip de tu máquina cliente ubuntu)
+h.Establece los siguientes registros de alias (CNAME): 
+➢mail → a la máquina ubuntu  
+➢ftp → al router  
+➢www → a tunombre.sri (máquina anfitriona)  
+➢nombrecompañero → a la máquina del compañero.i.Establece el registro para servidor de correo (MX)  
+➢tunombre.sri → mail (ubuntu)  
 3. Comprueba el fichero ``named.conf.local`` con el comando ​``named-checkconf``
 4. Comprueba el archivo de zona que has creado con el comando:a.named-checkzone tunombre.sri ``/etc/bind/db.tunombre.sri``
 5. Configurar zonas de resolución inversa para las dos subredes de trabajo y que resuelvacada una de las IP’s establecidas (192.168.22 y 10.0.X).

@@ -100,11 +100,11 @@ e. Vuelve a realizar alguna consulta desde Windows con nslookup y captura eltrá
 
 2. Crear y configurar el servidor como primario en una zona de resolución directa.
 
-a. Vamos a crear una zona para nuestra red local que se llamará: ​tunombre.sri
-b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear (esta opción se cambia donde se cambia el nombre del equipo pulsado el botón ​Más​)
-c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre).
-d. Crea el fichero de zona de resolución directa ​db.tunombre.sri ​y añade los registros para configurar el servidor con los valores que se indican (OJO a los puntos finales). Ver ANEXO I
-e. Parte inicial SOA
+a. Vamos a crear una zona para nuestra red local que se llamará: ​tunombre.sri 
+b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear (esta opción se cambia donde se cambia el nombre del equipo pulsado el botón ​Más​) 
+c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre). 
+d. Crea el fichero de zona de resolución directa ​db.tunombre.sri ​y añade los registros para configurar el servidor con los valores que se indican (OJO a los puntos finales). Ver ANEXO I 
+e. Parte inicial SOA 
 ➢Nombre del servidor principal para que sea ns.tunombre.sri  
 ➢Contacto: tunombre.tunombre.sri  
 ➢Serial: 20191112  

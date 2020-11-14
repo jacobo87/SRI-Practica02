@@ -107,8 +107,9 @@ b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear (es
 c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre). 
 
 d. Crea el fichero de zona de resolución directa ​db.tunombre.sri ​y añade los registros para configurar el servidor con los valores que se indican (OJO a los puntos finales). Ver ANEXO I 
- 
+
 e. Parte inicial SOA 
+ 
 ➢Nombre del servidor principal para que sea ns.tunombre.sri  
 ➢Contacto: tunombre.tunombre.sri  
 ➢Serial: 20191112  

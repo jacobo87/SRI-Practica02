@@ -47,8 +47,12 @@ a. Configura el cliente windows y ubuntu con ip fija y que tengan como servidorD
 ```
 Imagen 6.  DNS Ubuntu - IP fija y DNS ubuntu cliente
 ```
-b. En windows usa la orden ​nslookup​ y realiza consultas a diversos dominios deinternet (​www.google.es​, ​www.mec.es​, ​www.ual.es​ ...).
-	
+b. En windows usa la orden ​nslookup​ y realiza consultas a diversos dominios deinternet ( ​www.google.es​, ​www.mec.es​, ​www.ual.es​ ...).
+![image7](images/ubuDNS12.png "DNS Ubuntu")
+
+```
+Imagen 7.  DNS Ubuntu - nslookup www.google.es www.mec.es www.ual.es
+```
 c. En ubuntu y con la orden ​dig​ realiza las siguientes pruebas:
 
 ```bash
@@ -61,30 +65,30 @@ dig [@servidorDNS] NombreDominioAConsultar [tipoConsulta]
 #dig @TuIPServidorDNS www.ual.es any (Todas las consultasa,ns,mx,soa,...)
 #dig @TuIPServidorDNS -x 193.147.117.38 (consulta inversa IP--> nombre)
 ```
-![image7](images/ubuDNS7.png "DNS Ubuntu")
+![image8](images/ubuDNS7.png "DNS Ubuntu")
 
 ```
-Imagen 7.  DNS Ubuntu - dig 192.168.1.137 www.ual.es
+Imagen 8.  DNS Ubuntu - dig 192.168.1.137 www.ual.es
 ```
-![image8](images/ubuDNS8.png "DNS Ubuntu")
+![image9](images/ubuDNS8.png "DNS Ubuntu")
 
 ```
-Imagen 8.  DNS Ubuntu - dig 192.168.1.137 www.ual.es a
+Imagen 9.  DNS Ubuntu - dig 192.168.1.137 www.ual.es a
 ```
-![image9](images/ubuDNS9.png "DNS Ubuntu")
+![image10](images/ubuDNS9.png "DNS Ubuntu")
 
 ```
-Imagen 9.  DNS Ubuntu - dig 192.168.1.137 www.ual.es ns
+Imagen 10.  DNS Ubuntu - dig 192.168.1.137 www.ual.es ns
 ```
-![image10](images/ubuDNS10.png "DNS Ubuntu")
+![image11](images/ubuDNS10.png "DNS Ubuntu")
 
 ```
-Imagen 10.  DNS Ubuntu - dig 192.168.1.137 www.ual.es mx
+Imagen 11.  DNS Ubuntu - dig 192.168.1.137 www.ual.es mx
 ```
-![image11](images/ubuDNS11.png "DNS Ubuntu")
+![image12](images/ubuDNS11.png "DNS Ubuntu")
 
 ```
-Imagen 11.  DNS Ubuntu - dig 192.168.1.137 www.ual.es soa
+Imagen 12.  DNS Ubuntu - dig 192.168.1.137 www.ual.es soa
 ```
 d. Edita el fichero de configuración named.conf.options y configura como reenviador el servidor DNS 1.1.1.1.
 
@@ -93,7 +97,7 @@ e. Vuelve a realizar alguna consulta desde Windows con nslookup y captura eltrá
 2. Crear y configurar el servidor como primario en una zona de resolución directa.
 
 a. Vamos a crear una zona para nuestra red local que se llamará: ​tunombre.sri
-b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear(esta opción se cambia donde se cambia el nombre del equipo pulsado el botón ​Más​)
+b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear (esta opción se cambia donde se cambia el nombre del equipo pulsado el botón ​Más​)
 c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre).
 d. Crea el fichero de zona de resolución directa ​db.tunombre.sri ​y añade los registros para configurar el servidor con los valores que se indican (OJO a los puntos finales). Ver ANEXO I
 e. Parte inicial SOA

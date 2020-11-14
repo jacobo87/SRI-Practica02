@@ -42,10 +42,10 @@ Imagen 5.  DNS Ubuntu - nslookup 192.168.1.137
 1. Utilizar el servidor como sólo **caché**. Por defecto, al instalar el servicio DNS, este actúacomo sólo caché, es decir, no es autorizado a ninguna zona y responde a consultas recursivas.
 
 a. Configura el cliente windows y ubuntu con ip fija y que tengan como servidorDNS la dirección del servidor.
-![image5](images/ubuDNS1.png "DNS Ubuntu")
+![image6](images/ubuDNS1.png "DNS Ubuntu")
 
 ```
-Imagen 5.  DNS Ubuntu - IP fija y DNS ubuntu cliente
+Imagen 6.  DNS Ubuntu - IP fija y DNS ubuntu cliente
 ```
 b. En windows usa la orden ​nslookup​ y realiza consultas a diversos dominios deinternet (​www.google.es​, ​www.mec.es​, ​www.ual.es​ ...).
 	
@@ -61,10 +61,30 @@ dig [@servidorDNS] NombreDominioAConsultar [tipoConsulta]
 #dig @TuIPServidorDNS www.ual.es any (Todas las consultasa,ns,mx,soa,...)
 #dig @TuIPServidorDNS -x 193.147.117.38 (consulta inversa IP--> nombre)
 ```
-![image5](images/ubuDNS7.png "DNS Ubuntu")
+![image7](images/ubuDNS7.png "DNS Ubuntu")
 
 ```
-Imagen 5.  DNS Ubuntu - dig 192.168.1.137 www.ual.es
+Imagen 7.  DNS Ubuntu - dig 192.168.1.137 www.ual.es
+```
+![image8](images/ubuDNS8.png "DNS Ubuntu")
+
+```
+Imagen 8.  DNS Ubuntu - dig 192.168.1.137 www.ual.es a
+```
+![image9](images/ubuDNS9.png "DNS Ubuntu")
+
+```
+Imagen 9.  DNS Ubuntu - dig 192.168.1.137 www.ual.es ns
+```
+![image10](images/ubuDNS10.png "DNS Ubuntu")
+
+```
+Imagen 10.  DNS Ubuntu - dig 192.168.1.137 www.ual.es mx
+```
+![image11](images/ubuDNS11.png "DNS Ubuntu")
+
+```
+Imagen 11.  DNS Ubuntu - dig 192.168.1.137 www.ual.es soa
 ```
 d. Edita el fichero de configuración named.conf.options y configura como reenviador el servidor DNS 1.1.1.1.
 

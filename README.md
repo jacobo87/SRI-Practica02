@@ -90,8 +90,12 @@ Imagen 11.  DNS Ubuntu - dig 192.168.1.137 www.ual.es mx
 ```
 Imagen 12.  DNS Ubuntu - dig 192.168.1.137 www.ual.es soa
 ```
-d. Edita el fichero de configuración named.conf.options y configura como reenviador el servidor DNS 1.1.1.1.
+d. Edita el fichero de configuración ``named.conf.options`` y configura como reenviador el servidor DNS 1.1.1.1.
+![image13](images/ubuDNS13.png "DNS Ubuntu")
 
+```
+Imagen 13.  DNS Ubuntu - named.conf.options
+```
 e. Vuelve a realizar alguna consulta desde Windows con nslookup y captura eltráfico con Wireshark.
 
 2. Crear y configurar el servidor como primario en una zona de resolución directa.

@@ -120,10 +120,15 @@ h.Establece los siguientes registros de alias (CNAME):
 ➢nombrecompañero → a la máquina del compañero.i.Establece el registro para servidor de correo (MX)  
 ➢tunombre.sri → mail (ubuntu)  
 3. Comprueba el fichero ``named.conf.local`` con el comando ​``named-checkconf``. 
+
 4. Comprueba el archivo de zona que has creado con el comando:a.named-checkzone tunombre.sri ``/etc/bind/db.tunombre.sri``. 
+
 5. Configurar zonas de resolución inversa para las dos subredes de trabajo y que resuelvacada una de las IP’s establecidas (192.168.22 y 10.0.X). 
+
 6. Tienes que crear dos nuevas entradas en el archivo ``named.conf.local``, una por cada red. Ver ANEXO II. 
+
 7. Comprobar en cliente Ubuntu (debe estar configurado con ip fija) el funcionamiento delservidor DNS en el dominio de cada uno tunombre.sri con el comando ​dig​. 
+
 a. Que resuelve todos los nombre y alias. 
 b. Que resuelve dominio externos. 
 c. Que hace resolución inversa. 

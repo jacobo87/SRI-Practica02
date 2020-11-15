@@ -115,7 +115,11 @@ b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear (es
 c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre). 
 
 d. Crea el fichero de zona de resolución directa ​db.tunombre.sri ​y añade los registros para configurar el servidor con los valores que se indican (OJO a los puntos finales). Ver ANEXO I 
+![image15](images/ubuDNS15.png "DNS Ubuntu")
 
+```
+Imagen 15.  DNS Ubuntu - db.jacobo.sri
+```
 e. Parte inicial SOA 
  
 ➢Nombre del servidor principal para que sea ns.tunombre.sri  

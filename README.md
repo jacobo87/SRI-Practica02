@@ -168,7 +168,11 @@ Imagen 18.  DNS Ubuntu - db.192
 6. Tienes que crear dos nuevas entradas en el archivo ``named.conf.local``, una por cada red. Ver ANEXO II. 
 
 7. Comprobar en cliente Ubuntu (debe estar configurado con ip fija) el funcionamiento delservidor DNS en el dominio de cada uno tunombre.sri con el comando ​dig​. 
+![image19](images/ubuDNS19.png "DNS Ubuntu")
 
+```
+Imagen 19.  DNS Ubuntu - dig jacobo.sri.com
+```
 a. Que resuelve todos los nombre y alias. 
 
 b. Que resuelve dominio externos. 

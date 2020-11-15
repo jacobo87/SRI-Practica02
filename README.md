@@ -105,7 +105,11 @@ e. Vuelve a realizar alguna consulta desde Windows con nslookup y captura eltrá
 2. Crear y configurar el servidor como primario en una zona de resolución directa.
 
 a. Vamos a crear una zona para nuestra red local que se llamará: ​tunombre.sri
+![image14](images/ubuDNS14.png "DNS Ubuntu")
 
+```
+Imagen 14.  DNS Ubuntu - named.conf.local
+```
 b. Debemos cambiar el sufijo DNS del equipo a este dominio que vamos a crear (esta opción se cambia donde se cambia el nombre del equipo pulsado el botón ​Más​) 
 
 c. Edita el fichero ​``named.conf.local``​ y declara la zona de búsqueda directa para el dominio anterior. (Donde pone profesor cada uno pondrá su nombre). 

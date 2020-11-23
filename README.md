@@ -8,7 +8,9 @@ Siguiendo la configuración de máquinas virtuales que vimos en el tema inicial,
 ### Punto 2. INSTALAR SERVICIO
 1. Instalar servidor de DNS bind9 en la máquina Debian.
 
-	a. ``apt-get updateb.apt-get install bind9`` 
+	a. ``apt-get update`` 
+	
+	b. ``apt-get install bind9`` 
 	
 2. Comprueba que el servidor se ha iniciado y que está escuchando en los puertos 53TCP y UDP.
 
